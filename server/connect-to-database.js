@@ -7,7 +7,7 @@ let cachedDb = null;
 module.exports = async function connectToDatabase() {
   if (cachedDb) return cachedDb;
 
-  const client = await MongoClient.connect("mongodb://localhost:27017/", {
+  const client = await MongoClient.connect("mongodb+srv://eugene:091178goH@cluster0.qyblufz.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
